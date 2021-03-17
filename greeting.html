@@ -1,6 +1,6 @@
 <html> 
 <head>
-    <title id="greet">Greeting Message</title> 
+    <title></title> 
     <style>
 #lbl {
     font-family: sans-serif;
@@ -26,6 +26,7 @@ body{
     </style>
 </head>
 <body>
+    <div id="greet">Greeting Message</div>
     <div id="lbl"></div>
 </body>
 
@@ -55,6 +56,6 @@ body{
         greet = 'Good Evening  ';
 
     document.getElementById('lbl').innerHTML =
-        greet +=`<div id="date"> It's ${dayOfWeek} <span id="number-date">${date}</span></div>`;
+        greet +=` <div id="date"> It's ${dayOfWeek} <span id="number-date">${date}</span></div>`;
 </script> 
 </html>
