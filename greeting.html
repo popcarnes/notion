@@ -10,7 +10,8 @@
     border: 1px solid #ececec;
     text-align: center;
     line-height: 1.5;
-    height:85%
+    height:85%;
+    font-weight: bold;
 
 
 }
@@ -19,6 +20,9 @@
 }
 body{
     background-color: white;
+}
+#number-date}{
+    color: #d9730d;
 }
     </style>
 </head>
@@ -40,7 +44,7 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
+    var date = (today.getMonth()+1) + "/" + today.getDate() +'/'+today.getFullYear()  ;
 
     var greet;
 
@@ -52,6 +56,6 @@ body{
         greet = 'Good Evening  ';
 
     document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> It's ${date}</div>`;
+        greet+=`<div id="date"> It's ${dayOfWeek} <span id="number-date">${date}</span></div>`;
 </script> 
 </html>
