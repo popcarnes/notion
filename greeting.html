@@ -11,9 +11,9 @@
     text-align: center;
     line-height: 1.5;
     height:85%;
+}
+#greeting{
     font-weight: bold;
-
-
 }
 #date{
     font-size:medium;
@@ -56,6 +56,6 @@ body{
         greet = 'Good Evening  ';
 
     document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> It's ${dayOfWeek} <span id="number-date">${date}</span></div>`;
+        <span id="greeting">${greet}</span> +=`<div id="date"> It's ${dayOfWeek} <span id="number-date">${date}</span></div>`;
 </script> 
 </html>
